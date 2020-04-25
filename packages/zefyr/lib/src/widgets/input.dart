@@ -158,6 +158,12 @@ class InputConnectionController implements TextInputClient {
     }
   }
 
+  @override
+  AutofillScope get currentAutofillScope => null; //AutofillGroup.of(context);
+  @override
+  void showAutocorrectionPromptRect(int start, int end) {
+    // TODO: implement showAutocorrectionPromptRect
+  }
   //
   // Private members
   //
